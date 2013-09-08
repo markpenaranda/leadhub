@@ -1,0 +1,32 @@
+{
+    "name": "julien-c/mongovel",
+    "description": "A Laravel-ish wrapper to the PHP Mongo driver",
+    "keywords": ["laravel", "mongo", "mongodb", "Laravel 4"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Julien Chaumond",
+            "email": "chaumond@gmail.com"
+        },
+        {
+            "name": "Maxime Fabre",
+            "email": "ehtnam6@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "ext-mongo": "*",
+        "illuminate/container": "~4",
+        "illuminate/support": "~4"
+    },
+    "require-dev": {
+        "mockery/mockery": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Mongovel": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}

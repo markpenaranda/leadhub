@@ -1,0 +1,77 @@
+CHANGE LOG SHOULD BE UPDATED EVERY COMMIT
+DEVELOPER SHOULD ADD THE REVISION NUMBER 
+AS WELL AS PRE-REQUISITE REQUIREMENTS IF 
+EVER ANY WOULD ARISE.	
+
+
+/* rev 40 author <Mark Penaranda>
+----------------------------------*/
+added sub_categories for populate_db;
+added drop collection for populate_db;
+TODO : run populate_db;
+
+/* rev 45 author <Ryan Navarroza>
+----------------------------------*/
+added routing to menus
+added controller handler for menu routes
+
+/* rev 77 author <Gian Santillan>
+----------------------------------*/
+fixed session problem
+fixed play design problem
+
+/*rev 78 author <Gian Santillan>
+---------------------------------*/
+fixed titlecard - added ini_set set it to 8mb
+
+/* rev 87 author <Ryan Navarroza>
+----------------------------------*/
+added multiple image creation on upload
+this will create a folder for each sizes
+/**
+ * Available image sizes
+ * 290x163  == image thumbnails
+ * 580x326  == image carousel
+ * 1000x563 == image page banner
+ * default  == default size the image is uploaded
+ */
+ you get the path of the image ex. <?php getImageSize('media/jojo-a_timestamp', $width = 290, $height = 163); ?>
+
+ /*rev 89 author <Gian Santillan>
+ ----------------------------------*/
+ added getImageSize implementation
+ added ini_set(10m) in other upload parts
+
+ /*rev 114 author <Gian Santillan>
+ ----------------------------------*/
+ added new carousel in /front/index.php
+ removed old carousel
+
+ The plugin was just a basic plugin so i optimized it for our use. Still on rough patch
+
+ /*rev 133 author <Gian Santillan
+ ----------------------------------*/
+ -added carousel to category
+ -fixed carousel bug
+
+ /*rev 136 autor <Gian Santillan>
+ -----------------------------------*/
+ -added twit hash
+ -twit hash backend CRUD finished
+
+ /*rev 141 author <Ryan Navarroza>
+ -----------------------------------*/
+ -added upcoming and shows
+ -added enabled/disabled shows
+
+ /*rev 143 author <Gian Santillan>
+ -----------------------------------*/
+ -added category slug in FrontCategoryController
+ -added notification if newly arrived in prtv using Laravel Session
+ -doing session flush or logout will instantly pop the notification when going to /home
+
+ /*rev 150 author <Gian Santillan>
+ ----------------------------------*/
+ -added img-polaroid
+ -added linking in images
+ -added a little bit of CSS

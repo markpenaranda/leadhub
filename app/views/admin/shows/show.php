@@ -1,0 +1,1 @@
+showing <?php echo $show->_id ?>
